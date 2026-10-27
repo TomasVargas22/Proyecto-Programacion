@@ -1,0 +1,30 @@
+.image-accordion {
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+  height: 430px;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(238, 252, 83, 0.2);
+}
+
+.image-accordion img {
+  width: 0px;
+  height: 100%;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: .8;
+  transition: all .5s ease;
+}
+
+.image-accordion img:hover {
+  cursor: crosshair;
+  width: 320px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+
+.is-hidden {
+  display: none;
+}
