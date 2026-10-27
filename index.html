@@ -20,7 +20,7 @@
     <header class="header">
         <div class="container nav-container">
             <a href="#inicio" class="logo">
-                <span class="logo-icon">🕸️</span> SPIDER<span class="logo-highlight">CODE</span>
+                <img src="img/spider-emblem.png" alt="" class="logo-mark" width="32" height="32"> SPIDER<span class="logo-highlight">CODE</span>
             </a>
             <nav class="nav-bar" aria-label="Navegacion-Principal">
                 <ul class="nav-list">
@@ -32,7 +32,7 @@
             </nav>
 
             <div class="nav-actions">
-                <a href="#interactivo" class="btn btn-neon">Sentido arácnido</a>
+                <a href="#interactivo" class="btn btn-secondary btn-sm">Sentido arácnido</a>
             </div>
 
         </div>
@@ -43,7 +43,7 @@
 
                 <div class="hero-content">
                     <div class="hero-badge">
-                        <span>⚡</span> ROHRMOSER, SAN JOSÉ • 11:20 PM
+                        <span class="live-dot" aria-hidden="true"></span> ROHRMOSER, SAN JOSÉ • 11:20 PM
                     </div>
                     <h1 class="hero-title">
                         SPIDER-CODE: <br>
@@ -55,7 +55,7 @@
                         salvar el semestre se convierte en una carrera por salvar la ciudad.
                     </p>
                     <div class="hero-buttons">
-                        <a href="#historia" class="btn btn-neon">Comenzar mision ➔</a>
+                        <a href="#historia" class="btn btn-neon">Comenzar misión ➔</a>
                         <a href="#personajes" class="btn btn-secondary">Ver personaje</a>
                     </div>
                 </div>
@@ -68,13 +68,14 @@
                             <img src="img/spider-sabana.jpg"
                                 alt="Spider-Code balanceándose a toda velocidad sobre la autopista en La Sabana"
                                 class="hero-image">
-                            <img src="img/axel-hub.jpg" alt="Axel monitoreando cámaras de tránsito en Discord"
+                            <img src="img/spider-cornisa.jpg"
+                                alt="Evans en la cornisa de un rascacielos observando las calles iluminadas de la ciudad"
                                 class="hero-image">
-                            <img src="img/escena-mac.png"
-                                alt="La terminal de la Mac de Evans colapsando bajo el hackeo de JABRA.EXE"
+                            <img src="img/spider-closeup.jpg"
+                                alt="Primer plano de Spider-Code con máscara y circuitos neón bajo la lluvia"
                                 class="hero-image">
-                            <img src="img/jabra-pavas.jpg"
-                                alt="J.A.B.R.A. transfiriendo su núcleo a un case robótico militar en Pavas"
+                            <img src="img/spider-salto.jpg"
+                                alt="Evans en posición táctica con capa ondeando sobre los tejados josefinos"
                                 class="hero-image">
                         </div>
                     </div>
@@ -263,134 +264,138 @@
                                 <span class="mission-status badge badge-red">CRÍTICO</span>
                             </li>
                         </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-                        <section class="section lab" id="interactivo">
-                            <div class="container">
-                                <div class="section-header text-center">
-                                    <span class="badge badge-neon">SISTEMA SENSORIAL</span>
-                                    <h2 class="section-title">LABORATORIO DE SENTIDO ARÁCNIDO</h2>
-                                    <p class="section-subtitle">
-                                        Activá el algoritmo sensorial de Evans Vance para rastrear picos
-                                        electromagnéticos y rastrear a
-                                        J.A.B.R.A.
-                                    </p>
-                                </div>
-                                <div class="lab-interface">
-                                    <div class="lab-card">
-                                        <div class="lab-controls">
-                                            <p class="lab-text">
-                                                Presioná el botón de diagnóstico para sincronizar los sensores del traje
-                                                con la red
-                                                eléctrica de San José:
-                                            </p>
-                                            <button id="btn-spider-sense" class="btn btn-neon">
-                                                🕸️ ACTIVAR SENTIDO ARÁCNIDO
-                                            </button>
-                                        </div>
-                                        <div id="spider-sense-output" class="terminal-box is-hidden">
-                                            <div class="terminal-header">
-                                                <span class="dot dot-red"></span>
-                                                <span class="dot dot-yellow"></span>
-                                                <span class="dot dot-green"></span>
-                                                <span class="terminal-title">SISTEMA_RADAR_EVANS_v1.0.sh</span>
-                                            </div>
-                                            <div class="terminal-body">
-                                                <p class="term-line"><span class="term-prompt">></span> Escaneando
-                                                    frecuencia
-                                                    electromagnética en Rohrmoser...</p>
-                                                <p class="term-line"><span class="term-prompt">></span> <span
-                                                        class="status-alert">¡ALERTA DETECTADA!</span> Sobrecarga del
-                                                    94.8% en
-                                                    Subestación Pavas.</p>
-                                                <p class="term-line"><span class="term-prompt">></span> Origen:
-                                                    Servidores de DiDi
-                                                    interceptados por J.A.B.R.A.</p>
-                                                <p class="term-line"><span class="term-prompt">></span> Reporte de Nacho
-                                                    [Radio DiDi]:
-                                                    "¡Evans, tienen bloqueado el paso hacia el datacenter!"</p>
-                                                <p class="term-line"><span class="term-prompt">></span> Tiempo estimado
-                                                    antes del
-                                                    colapso: 38 minutos.</p>
-                                                <p class="term-line"><span class="term-prompt">></span> Axel [Discord]:
-                                                    "¡Evans, dejá de
-                                                    farmear en La Sabana y tirá telaraña ya!"</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+        <section class="section lab" id="interactivo">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="badge badge-neon">SISTEMA SENSORIAL</span>
+                    <h2 class="section-title">LABORATORIO DE SENTIDO ARÁCNIDO</h2>
+                    <p class="section-subtitle">
+                        Activá el algoritmo sensorial de Evans Vance para rastrear picos
+                        electromagnéticos y rastrear a
+                        J.A.B.R.A.
+                    </p>
+                </div>
+                <div class="lab-interface">
+                    <div class="lab-card">
+                        <div class="lab-controls">
+                            <p class="lab-text">
+                                Presioná el botón de diagnóstico para sincronizar los sensores del traje
+                                con la red
+                                eléctrica de San José:
+                            </p>
+                            <button id="btn-spider-sense" class="btn btn-neon">
+                                🕸️ ACTIVAR SENTIDO ARÁCNIDO
+                            </button>
+                        </div>
+                        <div id="spider-sense-output" class="terminal-box is-hidden">
+                            <div class="terminal-header">
+                                <span class="dot dot-red"></span>
+                                <span class="dot dot-yellow"></span>
+                                <span class="dot dot-green"></span>
+                                <span class="terminal-title">SISTEMA_RADAR_EVANS_v1.0.sh</span>
                             </div>
-                        </section>
-
-                        <section class="section outcome" id="desenlace">
-                            <div class="container">
-                                <div class="section-header text-center">
-                                    <span class="badge badge-yellow">11:58 PM • RACKS DE SERVIDORES EN PAVAS</span>
-                                    <h2 class="section-title">CAPÍTULO 03: EL BUCLE INFINITO</h2>
-                                    <p class="section-subtitle">
-                                        Evans llega con el traje empapado por la lluvia de Chepe mientras Axel le cuenta
-                                        los segundos
-                                        por Discord.
-                                    </p>
-                                </div>
-
-                                <div class="outcome-grid">
-                                    <article class="outcome-card">
-                                        <div class="outcome-badge">
-                                            <span class="badge badge-red">ÚLTIMO RECURSO</span>
-                                        </div>
-                                        <h3 class="outcome-title">Inyección del Proyecto de Progra</h3>
-                                        <p class="outcome-text">
-                                            Spider-Code entra al centro de datos en Pavas justo cuando J.A.B.R.A.
-                                            intentaba transferir
-                                            su "mente". Sin tiempo para ponerse a descifrar claves ni hackear firewalls,
-                                            Evans sacó su
-                                            llave USB y le mandó directo el código de su tarea de la universidad: un
-                                            ciclo
-                                            <code>while</code> infinito que no había logrado solucionar en toda la
-                                            semana.
-                                        </p>
-                                        <div class="outcome-dialogue">
-                                            <p class="dialogue-line">
-                                                <strong>Axel [Discord]:</strong> "¡Deje de celebrar, abra el campus
-                                                virtual de la
-                                                Fidélitas y suba el .zip que le queda un minuto!"
-                                            </p>
-                                        </div>
-                                    </article>
-
-                                    <article class="outcome-card card-status">
-                                        <div class="outcome-badge">
-                                            <span class="badge badge-neon">CAMPUS VIRTUAL DE FIDÉLITAS</span>
-                                        </div>
-                                        <h3 class="outcome-title">Comprobante de Entrega</h3>
-                                        <div class="submission-receipt">
-                                            <div class="receipt-row">
-                                                <span class="receipt-label">Archivo:</span>
-                                                <span class="receipt-value">Proyecto_Final_Evans_Vance.rar</span>
-                                            </div>
-                                            <div class="receipt-row">
-                                                <span class="receipt-label">Hora de subida:</span>
-                                                <span class="receipt-value text-neon">11:58:40 PM (A TIEMPO)</span>
-                                            </div>
-                                            <div class="receipt-row">
-                                                <span class="receipt-label">Estado de J.A.B.R.A:</span>
-                                                <span class="receipt-value text-red">Neutralizada por
-                                                    desbordamiento</span>
-                                            </div>
-                                            <div class="receipt-row">
-                                                <span class="receipt-label">Nota final:</span>
-                                                <span class="receipt-value text-yellow">100 / 100 • Aprobado</span>
-                                            </div>
-                                        </div>
-                                        <p class="outcome-summary">
-                                            Los semáforos de ChepeYork volvieron a la normalidad, la red eléctrica se
-                                            estabilizó y Evans
-                                            salvó el cuatrimestre sin revelar que es Spider-Code.
-                                        </p>
-                                    </article>
-                                </div>
+                            <div class="terminal-body">
+                                <p class="term-line"><span class="term-prompt">></span> Escaneando
+                                    frecuencia
+                                    electromagnética en Rohrmoser...</p>
+                                <p class="term-line"><span class="term-prompt">></span> <span
+                                        class="status-alert">¡ALERTA DETECTADA!</span> Sobrecarga del
+                                    94.8% en
+                                    Subestación Pavas.</p>
+                                <p class="term-line"><span class="term-prompt">></span> Origen:
+                                    Servidores de DiDi
+                                    interceptados por J.A.B.R.A.</p>
+                                <p class="term-line"><span class="term-prompt">></span> Reporte de Nacho
+                                    [Radio DiDi]:
+                                    "¡Evans, tienen bloqueado el paso hacia el datacenter!"</p>
+                                <p class="term-line"><span class="term-prompt">></span> Tiempo estimado
+                                    antes del
+                                    colapso: 38 minutos.</p>
+                                <p class="term-line"><span class="term-prompt">></span> Axel [Discord]:
+                                    "¡Evans, dejá de
+                                    farmear en La Sabana y tirá telaraña ya!"</p>
                             </div>
-                        </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section outcome" id="desenlace">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="badge badge-yellow">11:58 PM • RACKS DE SERVIDORES EN PAVAS</span>
+                    <h2 class="section-title">CAPÍTULO 03: EL BUCLE INFINITO</h2>
+                    <p class="section-subtitle">
+                        Evans llega con el traje empapado por la lluvia de Chepe mientras Axel le cuenta
+                        los segundos
+                        por Discord.
+                    </p>
+                </div>
+
+                <div class="outcome-grid">
+                    <article class="outcome-card">
+                        <div class="outcome-badge">
+                            <span class="badge badge-red">ÚLTIMO RECURSO</span>
+                        </div>
+                        <h3 class="outcome-title">Inyección del Proyecto de Progra</h3>
+                        <p class="outcome-text">
+                            Spider-Code entra al centro de datos en Pavas justo cuando J.A.B.R.A.
+                            intentaba transferir
+                            su "mente". Sin tiempo para ponerse a descifrar claves ni hackear firewalls,
+                            Evans sacó su
+                            llave USB y le mandó directo el código de su tarea de la universidad: un
+                            ciclo
+                            <code>while</code> infinito que no había logrado solucionar en toda la
+                            semana.
+                        </p>
+                        <div class="outcome-dialogue">
+                            <p class="dialogue-line">
+                                <strong>Axel [Discord]:</strong> "¡Deje de celebrar, abra el campus
+                                virtual de la
+                                Fidélitas y suba el .zip que le queda un minuto!"
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="outcome-card card-status">
+                        <div class="outcome-badge">
+                            <span class="badge badge-neon">CAMPUS VIRTUAL DE FIDÉLITAS</span>
+                        </div>
+                        <h3 class="outcome-title">Comprobante de Entrega</h3>
+                        <div class="submission-receipt">
+                            <div class="receipt-row">
+                                <span class="receipt-label">Archivo:</span>
+                                <span class="receipt-value">Proyecto_Final_Evans_Vance.rar</span>
+                            </div>
+                            <div class="receipt-row">
+                                <span class="receipt-label">Hora de subida:</span>
+                                <span class="receipt-value text-neon">11:58:40 PM (A TIEMPO)</span>
+                            </div>
+                            <div class="receipt-row">
+                                <span class="receipt-label">Estado de J.A.B.R.A:</span>
+                                <span class="receipt-value text-red">Neutralizada por
+                                    desbordamiento</span>
+                            </div>
+                            <div class="receipt-row">
+                                <span class="receipt-label">Nota final:</span>
+                                <span class="receipt-value text-yellow">100 / 100 • Aprobado</span>
+                            </div>
+                        </div>
+                        <p class="outcome-summary">
+                            Los semáforos de ChepeYork volvieron a la normalidad, la red eléctrica se
+                            estabilizó y Evans
+                            salvó el cuatrimestre sin revelar que es Spider-Code.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
     </main>
 
@@ -398,7 +403,7 @@
         <div class="container footer-container">
             <div class="footer-info">
                 <a href="#inicio" class="footer-logo">
-                    <span class="logo-icon">🕸️</span> SPIDER<span class="logo-highlight">CODE</span>
+                    <img src="img/spider-emblem.png" alt="" class="logo-mark" width="32" height="32"> SPIDER<span class="logo-highlight">CODE</span>
                 </a>
                 <p class="footer-tagline">
                     Proyecto: Programación Web • CTP Cotepecos 2026.
