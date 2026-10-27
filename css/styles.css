@@ -211,3 +211,41 @@ h1, h2, h3, .btn, .badge, .logo, .footer-logo, .nav-link {
 .character-role { margin-bottom: 12px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--neon); }
 .card-featured .character-role, .card-featured .character-bio { color: var(--bg); }
 
+.story { background: var(--cream); color: var(--bg); }
+.story .section-title, .story-heading { color: var(--bg); }
+.story .section-subtitle, .story-paragraph { color: #334155; }
+.story .badge-neon { border: 1px solid var(--bg); }
+
+.story-timeline, .missions-list, .terminal-body, .submission-receipt { display: flex; flex-direction: column; gap: 20px; }
+.story-panel { background: #ffffff; border: 2px solid var(--bg); box-shadow: 4px 4px 0 var(--bg); }
+.panel-split, .outcome-grid { display: grid; grid-template-columns: 5fr 7fr; align-items: center; gap: 28px; }
+.story-figure { overflow: hidden; background: var(--bg); border-radius: 12px; }
+.story-image { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.story-caption { padding: 10px 14px; font-size: 0.75rem; color: var(--neon); }
+.story-heading { margin: 12px 0; font-size: 1.75rem; }
+
+.discord-callout, .tactical-hud, .mission-item, .terminal-box, .submission-receipt {
+  padding: 16px;
+  background: var(--bg);
+  color: var(--cream);
+  border-radius: 12px;
+}
+
+.discord-callout { display: flex; align-items: center; gap: 14px; margin: 16px 0; border-left: 4px solid #7289da; }
+.discord-avatar { font-size: 1.6rem; }
+.discord-user { display: block; font-weight: 700; color: #7289da; }
+.tactical-hud { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 16px; }
+.hud-item { padding-left: 12px; border-left: 3px solid var(--neon); }
+.hud-label { display: block; font-size: 0.7rem; color: var(--text-muted); }
+.hud-value, .receipt-value { font-family: monospace; font-weight: 700; color: #ffffff; }
+
+.panel-missions { background: var(--bg); color: var(--cream); }
+.missions-header { margin-bottom: 16px; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+.mission-item { display: flex; align-items: center; gap: 16px; background: var(--surface); border-left: 4px solid var(--text-muted); }
+.mission-icon { font-size: 1.2rem; }
+.mission-item.completed strong { text-decoration: line-through; }
+.mission-item.in-progress { border-left-color: var(--amber); }
+.mission-item.urgent { border-left-color: var(--red); }
+.mission-details { display: flex; flex: 1; flex-direction: column; }
+.mission-details span { font-size: 0.85rem; color: var(--text-muted); }
+
