@@ -249,3 +249,24 @@ h1, h2, h3, .btn, .badge, .logo, .footer-logo, .nav-link {
 .mission-details { display: flex; flex: 1; flex-direction: column; }
 .mission-details span { font-size: 0.85rem; color: var(--text-muted); }
 
+.lab-interface { max-width: 780px; margin: 0 auto; }
+.lab-card, .outcome-card.card-status { box-shadow: 4px 4px 0 var(--neon); }
+.lab-controls { display: flex; flex-direction: column; align-items: center; gap: 20px; padding: 20px; text-align: center; }
+.terminal-box { padding: 0; overflow: hidden; border: 1px solid var(--line); }
+.terminal-header { display: flex; align-items: center; gap: 8px; padding: 10px 16px; background: #07090e; border-bottom: 1px solid var(--line); }
+.dot { width: 12px; height: 12px; border-radius: 50%; }
+.dot-red { background: #ff5f57; }
+.dot-yellow { background: #febc2e; }
+.dot-green { background: #28c840; }
+.terminal-title { margin-left: 8px; font-family: monospace; font-size: 0.75rem; color: var(--text-muted); }
+.terminal-body { gap: 8px; padding: 20px; font-family: monospace; font-size: 0.9rem; }
+.term-prompt, .outcome-text code { font-family: monospace; font-weight: 700; color: var(--neon); }
+.status-alert { font-weight: 700; color: var(--red); }
+
+.outcome-grid { grid-template-columns: 7fr 5fr; align-items: stretch; }
+.outcome-card { display: flex; flex-direction: column; justify-content: space-between; gap: 16px; }
+.outcome-card:first-child { box-shadow: 4px 4px 0 var(--red); }
+.outcome-dialogue { padding: 14px; background: var(--cream); color: var(--bg); border-left: 4px solid var(--red); border-radius: 8px; }
+.submission-receipt { gap: 10px; border: 1px dashed var(--neon); }
+.receipt-row { padding-bottom: 8px; border-bottom: 1px solid var(--line); font-size: 0.85rem; }
+
