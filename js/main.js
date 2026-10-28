@@ -19,4 +19,24 @@ document.addEventListener("DOMContentLoaded", () => {
             if (!wasActive) img.classList.add("is-active");
         });
     });
+
+    const sections = document.querySelectorAll("main section[id]");
+    const navLinks = document.querySelectorAll(".nav-link");
+
+    window.addEventListener("scroll", () => {
+        let currentSection = "";
+        sections.forEach((section) => {
+            const sectionTop = section.offsetTop - 120;
+            if (window.scrollY >= sectionTop) {
+                currentSection = section.getAttribute("id");
+            }
+        });
+
+        navLinks.forEach((link) => {
+            link.classList.remove("is-active");
+            if (link.getAttribute("href") === "#" + currentSection) {
+                link.classList.add("is-active");
+            }
+        });
+    });
 });
