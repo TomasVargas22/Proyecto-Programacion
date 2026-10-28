@@ -10,4 +10,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 : "🛑 DESACTIVAR RADAR SENSORIAL";
         });
     }
+
+    const accordionImages = document.querySelectorAll(".image-accordion img");
+    accordionImages.forEach((img) => {
+        img.addEventListener("click", () => {
+            const wasActive = img.classList.contains("is-active");
+            accordionImages.forEach((other) => other.classList.remove("is-active"));
+            if (!wasActive) img.classList.add("is-active");
+        });
+    });
 });
