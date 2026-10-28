@@ -270,3 +270,17 @@ h1, h2, h3, .btn, .badge, .logo, .footer-logo, .nav-link {
 .submission-receipt { gap: 10px; border: 1px dashed var(--neon); }
 .receipt-row { padding-bottom: 8px; border-bottom: 1px solid var(--line); font-size: 0.85rem; }
 
+.footer { padding: 56px 0 28px; background: #07090e; }
+.footer-container { align-items: flex-start; padding-bottom: 32px; border-bottom: 1px solid var(--line); }
+.footer-tagline, .footer-author, .footer-bottom { margin-top: 8px; font-size: 0.85rem; color: var(--text-muted); }
+.footer-nav { display: flex; flex-direction: column; align-items: flex-end; gap: 14px; }
+.footer-bottom { padding-top: 20px; }
+
+@media (max-width: 900px) {
+  .container { padding: 0 20px; }
+  .hero-container, .characters-grid, .panel-split, .tactical-hud, .outcome-grid { grid-template-columns: 1fr; }
+  .character-card.card-featured, .character-card:last-child:not(.card-featured) { grid-column: auto; grid-row: auto; }
+  .nav-bar { display: none; }
+  .footer-container, .missions-header, .receipt-row { flex-direction: column; align-items: flex-start; }
+  .footer-nav { align-items: flex-start; }
+}
